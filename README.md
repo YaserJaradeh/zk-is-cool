@@ -4,7 +4,7 @@ A beautiful, interactive web application that demonstrates **zero-knowledge proo
 
 ## What Is This?
 
-This is an **educational demonstration** of zero-knowledge cryptography. It lets you generate a cryptographic proof that you're 18 years old without sending your actual birthdate to the server—or anywhere else.
+This is a demo of zero-knowledge cryptography. It lets you generate a cryptographic proof that you're 18 years old without sending your actual birthdate to the server—or anywhere else.
 
 ### The Problem
 Traditional age verification requires you to share sensitive personal information (your birthdate) with companies. They store it, potentially exposing it to breaches.
@@ -182,58 +182,8 @@ npm start                # Start production server
 npm run lint             # Run ESLint
 ```
 
-## 🚀 Deployment
-
-### On Vercel (Recommended)
-```bash
-# Push to GitHub, connect to Vercel
-# Automatic deployments on every push
-```
-
-### On Other Platforms
-```bash
-npm run build
-npm start
-```
-
-The app runs on port 3000 by default.
-
-## 🎯 Use Cases
-
-This demo is useful for:
-- 🎓 **Learning** zero-knowledge proofs
-- 🔬 **Understanding** cryptography
-- 🛡️ **Building** privacy-first applications
-- 🏢 **Demonstrating** age verification without data collection
-- 💡 **Teaching** cryptographic concepts
-
 ## ⚠️ Important Notes
-
-### This is a Demo
-This is an **educational demonstration** of zero-knowledge concepts. For production systems:
-- Consider more advanced proof systems (SNARKs, STARKs)
-- Implement proper backend validation
-- Add user authentication
-- Set up audit logging
-- Get cryptographic review
-
-### Privacy Guarantee
-While this demo uses sound cryptography:
-- Birthdates are hashed but not forgotten by the server (if you store proofs)
-- The commitment proves knowledge but doesn't guarantee uniqueness
-- In production, combine with other privacy techniques
-
-## 📄 License
-
-This project is created for educational purposes.
-
-## 📚 Documentation
-
-For more information, check out:
-- **[QUICKSTART.md](./QUICKSTART.md)** - Get running in 2 minutes
-- **[DEMO_GUIDE.md](./DEMO_GUIDE.md)** - Complete feature documentation
-- **[IMPLEMENTATION_SUMMARY.md](./IMPLEMENTATION_SUMMARY.md)** - Technical details
-- **[FILES_CREATED.md](./FILES_CREATED.md)** - File manifest
+Nothing is stored by the server
 
 ## 🎉 Get Started Now!
 
@@ -242,7 +192,3 @@ npm install && npm run dev
 ```
 
 Then visit **http://localhost:3000** and explore zero-knowledge proofs in action!
-
----
-
-**Ready to learn?** 🚀 Start the dev server and generate your first proof!

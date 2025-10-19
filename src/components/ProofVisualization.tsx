@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { SequenceDiagram } from './SequenceDiagram';
 
 interface ProofData {
   commitment: string;
@@ -89,6 +90,12 @@ export function ProofVisualization({
       </div>
 
       <div className="space-y-4 mb-8">
+        <Section title="Proof Flow Visualization" id="flowVisualization" icon="🔄">
+          <div className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 rounded-lg p-6">
+            <SequenceDiagram publicProof={publicProof} verification={verificationDetails} />
+          </div>
+        </Section>
+
         <Section title="How Zero-Knowledge Proofs Work" id="howItWorks" icon="🧠">
           <div className="space-y-4 text-gray-700 dark:text-gray-300">
             <p>
